@@ -1,0 +1,81 @@
+* {
+ box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Poppins', monospace;
+  font-size: 16px;
+  color: white;
+  background: url(images/bg-intro-mobile.png), hsl(0, 100%, 74%);
+}
+
+@media only screen and (max-width: 375px) {
+  :root {
+  	margin: 5vh 5vw;	
+  }
+  
+  main {
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+	
+  .promo {
+    text-align: center;
+	background: hsl(248, 32%, 49%);
+    width: 80vw;
+    margin: auto;
+    height: 13vh;
+    padding: 25px;
+    box-shadow: 0px 4px 2px 1px rgba(0, 0, 0, 0.4);
+    border-radius: 4%;
+  }
+  
+  #form {
+    width: 80vw;
+    margin: auto;
+    background: white;
+    border-radius: 4%;
+    box-shadow: 0px 4px 2px 1px rgba(0, 0, 0, 0.4);
+  }
+  
+  #form input, button {
+  	width: 70vw;
+    height: 5vh;
+    margin: 7px 5vw;
+    border-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  button {
+  	background: hsl(154, 59%, 51%);
+  	color: white;
+    font-weight: 600;
+  }
+  
+  .terms {
+  	font-size: 12px;
+    color: hsl(246, 25%, 77%);
+    text-align: center;
+    margin: 0px 5px;
+  }
+ 
+  ::-webkit-input-placeholder {
+  	font-weight: 700;
+    text-indent: 5px;
+    color: rgba(0, 0, 0, 0.49)
+  }
+} 
+
+
+  
+  
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+ 
