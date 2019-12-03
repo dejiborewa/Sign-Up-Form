@@ -11,7 +11,7 @@
 
 @media only screen and (max-width: 375px) {
   :root {
-  	margin: 5vh 5vw;	
+  	margin: 3vh 5vw;	
   }
   
   main {
@@ -26,8 +26,8 @@
 	background: hsl(248, 32%, 49%);
     width: 80vw;
     margin: auto;
-    height: 13vh;
-    padding: 25px;
+    height: 10vh;
+    padding: 1em;
     box-shadow: 0px 4px 2px 1px rgba(0, 0, 0, 0.4);
     border-radius: 4%;
   }
@@ -46,6 +46,7 @@
     margin: 7px 5vw;
     border-color: rgba(0, 0, 0, 0.1);
   }
+ 
   
   button {
   	background: hsl(154, 59%, 51%);
