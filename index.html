@@ -5,43 +5,52 @@
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href='https://fonts.google.com/specimen/Poppins' rel='stylesheet'>
+  <link href='https://fonts.google.com/specimen/Poppins' rel='stylesheet'> 
   <link rel='stylesheet' href='stylesheet.css'>
   
   <title>Frontend Mentor | Intro component with sign up form</title>
 </head>
 <body>
-  <main class='main'>
-    <div>
-      <h1>Learn to code by watching others</h1>
-    </div>
-	<div>
-  		<p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-          but understanding how developers think is invaluable.</p>
-    </div>
-  </main>
+  <main>
+  	<div class='intro'>
+    	<div>
+      		<h1>Learn to code by watching others</h1>
+    	</div>
+		<div>
+  			<p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+          	but understanding how developers think is invaluable.</p>
+    	</div>
+  	</div>
   	
-  <aside>
-    <div class='promo'><span style='font-weight: 700'>Try it free 7 days</span> then<br> $20/mo. thereafter</div> 
-  </aside><br>
+  	<div class='content'>
+    	<div class='promo'>
+          <span>Try it free 7 days</span> then $20/mo. thereafter
+        </div><br>
 
-  <form id='form'>
-    <label for='first-name'></label>
-    <input type='text' placeholder='First Name' id='first-name'>
+ 	
+        <form name='form' method='POST'>
+    		<label for='first-name' id='fname'>
+    			<input type='text' placeholder='First Name' id='first-name'>	
+            </label>
+          
+    		<label for='last-name' id='lname'>
+  				<input type='text' placeholder='Last Name' id='last-name'>	
+            </label>
     
-    <label for='last-name'></label>
-  	<input type='text' placeholder='Last Name' id='last-name'>
+    		<label for='email' id='email_'>
+  				<input type='text' placeholder='Email Address' id='email'>
+            </label>
     
-    <label for='email'></label>
-  	<input type='text' placeholder='Email Address' id='email'>
+    		<label for='password' id='password_'>
+    			<input type='password' placeholder='Password' id='password'>
+            </label>
     
-    <label for='Password'></label>
-    <input type='password' placeholder='Password' id='Password'>
+    		<button type='submit' id='button' onclick='return validateForm()'>CLAIM YOUR FREE TRIAL</button>
     
-    <button type='submit'>CLAIM YOUR FREE TRIAL</button>
-    
-    <div class='terms'><p>By clicking the button, you are agreeing to our <span style='color: hsl(0, 100%, 74%); font-weight: 600'>Terms and Services</span></p></div><br>
-  </form>
+    		<div class='terms'><p>By clicking the button, you are agreeing to our <span style=>Terms and Services</span></p></div><br>
+    	</form>
+   </div>
+  </main>
 
   <footer>
     <p class="attribution">
@@ -49,5 +58,7 @@
       Coded by <a href="#">dejiborewa</a>.
     </p>
   </footer>
+  
+  <script type='text/javascript' src='index.js'></script> 
 </body>
 </html>

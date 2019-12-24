@@ -4,17 +4,19 @@
 
 :root {
   font-family: 'Poppins', monospace;
-  font-size: 1em;
   color: white;
-  background: url(images/bg-intro-mobile.png), hsl(0, 100%, 74%);
+  background: url(bg-intro-mobile.png), hsl(0, 100%, 74%);
 }
 
-@media only screen and (max-width: 375px) {
-  :root {
-  	margin: 5vh 5vw;	
+
+/* mobile */
+@media only screen and (min-width:320px) and (max-width:480px) {
+  main {
+  	margin: 5vh 5vw;
+    font-size: 1em;
   }
   
-  main {
+  .intro {
     width: 80vw;
     margin: auto;
     text-align: center;
@@ -25,29 +27,41 @@
 	background: hsl(248, 32%, 49%);
     width: 80vw;
     margin: auto;
-    box-shadow: 0px 4px 2px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 4px 2px 1px rgba(0, 0, 0, 0.4);
     border-radius: 4%;
     padding: 1em;
   }
   
-  #form {
+  .promo span {
+  	font-weight: 700;
+  }
+  
+  form {
     width: 80vw;
     margin: auto;
     background: white;
     border-radius: 4%;
-    box-shadow: 0px 4px 2px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 4px 2px 1px rgba(0, 0, 0, 0.4);
+    padding-top: .7em;
   }
   
-  #form input, button {
+  form input, button {
   	width: 70vw;
     padding: 1em;
     margin-left: 1.3em;
-    margin-top: .5em;
-    margin-bottom: .5em;
+    margin-top: 1em;
     border-color: rgba(0, 0, 0, 0.1);
     border-radius: 4%;
   }
  
+  label p {
+  	color: hsl(0, 100%, 74%);
+  	font-size: .5em;
+    font-style: italic;
+    text-align: right;
+    width: 70vw;
+    margin-left: 1.8em;
+  }
   
   button {
   	background: hsl(154, 59%, 51%);
@@ -61,6 +75,11 @@
     text-align: center;
     margin: 0em 2em;
   }
+  
+  .terms span {
+  	color: hsl(0, 100%, 74%); 
+    font-weight: 600;
+  }
  
   ::-webkit-input-placeholder {
   	font-weight: 700;
@@ -69,6 +88,165 @@
   }
 } 
 
+/* tablets and IPads */
+@media only screen and (min-width:481px) and (max-width:1223px) {
+  main {
+  	display: flex;
+    flex-direction: column;
+    font-size: 1.4em;
+    margin: 10vh 7vw;
+  }
+  
+  .intro {
+  	width: 100%;
+    text-align: center;
+  }
+  
+  .content {
+  	width: 100%;
+    margin: auto;
+  }
+  
+  .promo {
+    text-align: center;
+	background: hsl(248, 32%, 49%);
+    box-shadow: 1px 4px 2px 1px rgba(0, 0, 0, 0.4);
+    border-radius: 3%;
+    padding: 1em;
+  }
+  
+  .promo span {
+  	font-weight: 700;
+  }
+  
+  form {
+    background: white;
+    border-radius: 3%;
+    box-shadow: 1px 4px 2px 1px rgba(0, 0, 0, 0.4);
+  }
+  
+  form input, button {
+    width: 90%;
+    border-color: rgba(0, 0, 0, 0.1);
+    border-radius: 3%;
+    margin-left: 2.3em;
+    margin-top: 1.6em;
+    padding: 1em;
+  } 
+  
+  label p {
+  	color: hsl(0, 100%, 74%);
+  	font-size: .5em;
+    font-style: italic;
+    text-align: right;
+    width: 90%;
+    margin-left: 2.8em;
+  }
+  
+  button {
+  	background: hsl(154, 59%, 51%);
+  	color: white;
+    font-weight: 700;
+  }
+  
+  .terms {
+  	font-size: 0.6em;
+    color: hsl(246, 25%, 77%);
+    text-align: center;
+    margin: 0em 2em;
+  }
+  
+  .terms span {
+  	color: hsl(0, 100%, 74%); 
+    font-weight: 600;
+  }
+  
+  ::-webkit-input-placeholder {
+  	font-weight: 800;
+    text-indent: 0.5em;
+    color: rgba(0, 0, 0, 0.5)
+  }
+}
+
+/* desktop */
+@media only screen and (min-width:1224px) { 
+  main {
+  	display: flex;
+    margin: 13vh 8vw;
+    font-size: 1.2em;
+  }
+  
+  .intro {
+  	width: 50vw;
+    margin: auto;
+    padding: 5em;
+  }
+  
+  .content {
+  	width: 50vw;
+    margin: auto;
+  }
+  
+  .promo {
+    text-align: center;
+	background: hsl(248, 32%, 49%);
+    box-shadow: 1px 4px 2px 1px rgba(0, 0, 0, 0.4);
+    border-radius: 3%;
+    padding: 1em;
+  }
+  
+  .promo span {
+  	font-weight: 700;
+  }
+ 
+  form {
+    background: white;
+    border-radius: 3%;
+    box-shadow: 1px 4px 2px 1px rgba(0, 0, 0, 0.4);
+  }
+  
+  form input, button {
+    width: 35vw;
+    border-color: rgba(0, 0, 0, 0.1);
+    border-radius: 3%;
+    margin-left: 2.5em; 
+    margin-top: 1.6em;
+    padding: 1em;
+  } 
+  
+  label p {
+  	color: hsl(0, 100%, 74%);
+  	font-size: .5em;
+    font-style: italic;
+    text-align: right;
+    width: 35vw;
+    margin-left: 3em;
+  }
+  
+  button {
+  	background: hsl(154, 59%, 51%);
+  	color: white;
+    font-weight: 700;
+  }
+  
+  .terms {
+  	font-size: 0.6em;
+    color: hsl(246, 25%, 77%);
+    text-align: center;
+    margin: 0em 2em;
+  }
+  
+  .terms span {
+  	color: hsl(0, 100%, 74%); 
+    font-weight: 600;
+  }
+  
+  ::-webkit-input-placeholder {
+  	font-weight: 800;
+    text-indent: 0.5em;
+    color: rgba(0, 0, 0, 0.5)
+  }
+}
 
   
   
